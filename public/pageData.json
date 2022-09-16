@@ -1,0 +1,156 @@
+[{
+    "justifyContent": "flex-start",
+    "display": "flex",
+    "initHeight": 300,
+    "margin": "2rem 0",
+    "index": 1,
+    "showControllerBar": false,
+    "children": [{
+        "initCol": 24,
+        "border": "1px dashed #cccccc",
+        "margin": "0 0.2rem",
+        "borderRadius": "5px",
+        "backgroundColor": "#fff",
+        "showChildrenControllerBar": false,
+        "data": {
+            "id": "chart1",
+            "type": "chart",
+            "chartData": {
+                "title": {
+                    "text": "柱状图",
+                    "textStyle": {
+                        "fontSize": "20",
+                        "color": "#fff"
+                    }
+                },
+                "tooltip": {},
+                "xAxis": {
+                    "data": ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+                    "axisLabel": {
+                        "color": "#fff",
+                        "fontSize": "12"
+                    }
+                },
+                "yAxis": {
+                    "axisLabel": {
+                        "color": "#fff",
+                        "fontSize": "12"
+                    }
+                },
+                "series": [{
+                    "type": "bar",
+                    "data": [5, 20, 36, 10, 10, 20],
+                    "itemStyle": {
+                        "color": "#61a0a8"
+                    }
+                }]
+            }
+        }
+    }]
+}, {
+    "index": 2,
+    "justifyContent": "flex-start",
+    "initHeight": 300,
+    "margin": "2rem 0",
+    "display": "flex",
+    "showControllerBar": false,
+    "children": [{
+        "initCol": 16,
+        "border": "1px dashed #cccccc",
+        "margin": "0 0.2rem",
+        "borderRadius": "5px",
+        "backgroundColor": "#fff",
+        "showChildrenControllerBar": false,
+        "data": {
+            "id": "table1",
+            "type": "table",
+            "style": {
+                "head": {
+                    "fontSize": "13px",
+                    "color": "#fff",
+                    "textAlign": "center",
+                    "backColor": "#fff",
+                    "padding": "10px 0",
+                    "border": "1px solid #dcdcdc"
+                },
+                "body": {
+                    "fontSize": "13px",
+                    "color": "#fff",
+                    "textAlign": "center",
+                    "backColor": "#fff",
+                    "padding": "10px 0",
+                    "border": "1px solid #dcdcdc"
+                }
+            },
+            "tableHead": [{
+                "label": "日期",
+                "prop": "date"
+            }, {
+                "label": "姓名",
+                "prop": "name"
+            }, {
+                "label": "地址",
+                "prop": "address"
+            }],
+            "tableBody": [{
+                "date": "2016-05-02",
+                "name": "王小虎",
+                "address": "上海市普陀区金沙江路 1518 弄"
+            }, {
+                "date": "2016-05-04",
+                "name": "王小虎",
+                "address": "上海市普陀区金沙江路 1517 弄"
+            }, {
+                "date": "2016-05-01",
+                "name": "王小虎",
+                "address": "上海市普陀区金沙江路 1519 弄"
+            }, {
+                "date": "2016-05-03",
+                "name": "王小虎",
+                "address": "上海市普陀区金沙江路 1516 弄"
+            }]
+        }
+    }, {
+        "initCol": 8,
+        "border": "1px dashed #cccccc",
+        "margin": "0 0.2rem",
+        "borderRadius": "5px",
+        "backgroundColor": "#fff",
+        "showChildrenControllerBar": false,
+        "data": {
+            "id": "chart2",
+            "type": "chart",
+            "chartData": {
+                "title": {
+                    "text": "折线图",
+                    "textStyle": {
+                        "fontSize": "20",
+                        "color": "#fff"
+                    }
+                },
+                "tooltip": {},
+                "xAxis": {
+                    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                    "axisLabel": {
+                        "color": "#fff",
+                        "fontSize": "12"
+                    }
+                },
+                "yAxis": {
+                    "type": "value",
+                    "axisLabel": {
+                        "color": "#fff",
+                        "fontSize": "12"
+                    }
+                },
+                "series": [{
+                    "data": [820, 932, 901, 934, 1290, 1330, 1320],
+                    "type": "line",
+                    "itemStyle": {
+                        "color": "#58afec"
+                    }
+                }]
+            }
+        }
+    }]
+}]
